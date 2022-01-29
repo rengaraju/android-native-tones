@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:orientation="vertical"
+    tools:context="com.example.tone.MainActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:autoLink="web"
+        android:text="Renga Play List"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/tonedur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="5000"
+        android:progress="1000"/>
+
+    <TextView
+        android:id="@+id/tonedurtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"/>
+
+    <ListView
+        android:id="@+id/tonelist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
